@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.libraries.myoffice.SignUpActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Title-->
+        <TextView
+            android:text="Sign Up"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--Information Filled-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Logo-->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_action_signuplogo"
+                android:layout_width="@dimen/logowidth"
+                android:layout_height="@dimen/logowidth" />
+
+            <!--Real Information Filled-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--Name-->
+                <EditText
+                    android:id="@+id/editText3"
+                    android:hint="Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--User-->
+                <EditText
+                    android:id="@+id/editText4"
+                    android:hint="User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <!--Password-->
+                <EditText
+                    android:id="@+id/editText5"
+                    android:hint="Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Sign Up-->
+        <Button
+            android:id="@+id/button3"
+            android:text="Sign Up"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
